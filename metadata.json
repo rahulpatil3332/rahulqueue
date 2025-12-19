@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Circular Queue Visualization App",
+  "description": "An interactive educational tool demonstrating Circular Queue concepts, operations (Enqueue, Dequeue, Peek), and its underlying logic using a ring-style visualizer and Python code references.",
+  "requestFramePermissions": []
+}
