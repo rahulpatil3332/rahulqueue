@@ -507,11 +507,6 @@ const App: React.FC = () => {
                 {/* Decorative glow inside attribution card */}
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-indigo-500/10 blur-3xl group-hover:bg-indigo-500/20 transition-all duration-700"></div>
                 
-                <div className="flex items-center gap-2 mb-6">
-                  <GraduationCap className="text-indigo-400" size={16} />
-                  <p className="text-xs text-indigo-400 uppercase font-black tracking-[0.2em]">Academic Submission</p>
-                </div>
-                
                 <div className="flex items-center gap-6">
                   <div className="relative">
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-2xl">
@@ -538,7 +533,7 @@ const App: React.FC = () => {
               <div className="bg-white/5 px-6 py-3 rounded-full border border-white/10 flex items-center gap-3 hover:bg-white/10 transition-all cursor-default">
                 <Copyright className="text-slate-500" size={16} />
                 <span className="text-slate-300 font-black text-sm uppercase tracking-widest">
-                  2024 Vaghoba Mitra Mandal
+                  20 DEC 2025 Vaghoba Mitra Mandal
                 </span>
               </div>
             </div>

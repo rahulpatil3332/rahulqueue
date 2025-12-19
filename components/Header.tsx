@@ -68,12 +68,6 @@ const Header: React.FC = () => {
                       <p className="font-black text-slate-800 text-lg">2547029</p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-center justify-center gap-2 text-xs font-bold text-slate-400 py-1">
-                    <div className="h-[1px] flex-1 bg-slate-100"></div>
-                    <span className="uppercase tracking-tighter">Student Submission</span>
-                    <div className="h-[1px] flex-1 bg-slate-100"></div>
-                  </div>
                 </div>
               </div>
             </div>
