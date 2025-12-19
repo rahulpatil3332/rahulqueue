@@ -9,7 +9,8 @@ import CodeBlock from './components/CodeBlock';
 import { 
   Info, AlertCircle, CheckCircle2, Play, Trash2, Search, ArrowRight, 
   RefreshCcw, PlusCircle, MinusCircle, HelpCircle, Zap, ShieldAlert,
-  Cpu, Activity, Layout, Repeat, Monitor, Network, Disc
+  Cpu, Activity, Layout, Repeat, Monitor, Network, Disc, GraduationCap,
+  Copyright, ExternalLink, Heart
 } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -484,30 +485,72 @@ const App: React.FC = () => {
         </Section>
       </main>
 
-      <footer className="bg-slate-900 text-white pt-20 pb-12">
+      <footer className="bg-slate-900 text-white pt-24 pb-12">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 border-b border-white/5 pb-16">
+          <div className="grid md:grid-cols-2 gap-16 border-b border-white/10 pb-20">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Circular Queue Visualization</h2>
-              <p className="text-slate-400 max-w-sm">A dedicated academic tool designed for students to master linear data structures through visual learning and interaction.</p>
+              <div className="flex flex-col mb-6">
+                <div className="inline-flex items-center gap-3 mb-4">
+                   <div className="p-3 bg-emerald-600 rounded-2xl shadow-xl shadow-emerald-500/20">
+                     <Heart className="text-white fill-emerald-500 animate-heartbeat" size={28} />
+                   </div>
+                   <h2 className="text-4xl font-black tracking-tight italic">Thank You!</h2>
+                </div>
+                <p className="text-slate-400 max-w-sm text-lg leading-relaxed font-medium">
+                  We hope this interactive guide helped you master the circular queue concept. Keep learning and happy coding!
+                </p>
+              </div>
             </div>
+            
             <div className="flex flex-col md:items-end justify-center">
-              <div className="bg-white/5 p-6 rounded-3xl border border-white/10 text-left w-full md:w-auto">
-                <p className="text-xs text-indigo-400 uppercase font-bold tracking-widest mb-4">Project Submission</p>
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-indigo-500 flex items-center justify-center">
-                    <Activity size={20} />
+              <div className="bg-white/5 p-8 rounded-[2.5rem] border border-white/10 backdrop-blur-sm text-left w-full md:w-auto relative group overflow-hidden">
+                {/* Decorative glow inside attribution card */}
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-indigo-500/10 blur-3xl group-hover:bg-indigo-500/20 transition-all duration-700"></div>
+                
+                <div className="flex items-center gap-2 mb-6">
+                  <GraduationCap className="text-indigo-400" size={16} />
+                  <p className="text-xs text-indigo-400 uppercase font-black tracking-[0.2em]">Academic Submission</p>
+                </div>
+                
+                <div className="flex items-center gap-6">
+                  <div className="relative">
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-2xl">
+                      <Activity className="text-white" size={32} />
+                    </div>
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-emerald-500 rounded-full border-4 border-slate-900 flex items-center justify-center">
+                      <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+                    </div>
                   </div>
                   <div>
-                    <h4 className="font-bold">Rahul Dilip Patil</h4>
-                    <p className="text-xs text-slate-400">Roll No: 2547029</p>
+                    <h4 className="font-black text-xl text-white">Rahul Dilip Patil</h4>
+                    <p className="text-sm text-slate-400 font-bold flex items-center gap-1.5">
+                      Roll No: <span className="text-indigo-400">2547029</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-8 text-center text-slate-500 text-xs">
-            © 2024 Vaghoba Mitra Mandal. Academic Project Purpose Only.
+
+          {/* Enhanced Copyright Footer Block */}
+          <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="bg-white/5 px-6 py-3 rounded-full border border-white/10 flex items-center gap-3 hover:bg-white/10 transition-all cursor-default">
+                <Copyright className="text-slate-500" size={16} />
+                <span className="text-slate-300 font-black text-sm uppercase tracking-widest">
+                  2024 Vaghoba Mitra Mandal
+                </span>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-6">
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                Documentation <ExternalLink size={12} />
+              </a>
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                Privacy Policy <ExternalLink size={12} />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
