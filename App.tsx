@@ -202,7 +202,7 @@ const App: React.FC = () => {
       <main className="max-w-6xl mx-auto px-4 mt-12 pb-24 space-y-20">
         
         {/* INTRODUCTION */}
-        <Section id="intro" title="1. What is a Circular Queue?">
+        <Section id="intro" title="1. What is a Circular Queue?" variant="slide-left">
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
@@ -247,7 +247,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* OPERATIONS */}
-        <Section id="operations" title="2. Standard Operations">
+        <Section id="operations" title="2. Standard Operations" variant="scale">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-2xl border border-gray-200 hover:shadow-md transition-shadow">
               <PlusCircle className="text-blue-600 mb-4" size={32} />
@@ -273,7 +273,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* CONDITIONS */}
-        <Section id="conditions" title="3. Overflow and Underflow">
+        <Section id="conditions" title="3. Overflow and Underflow" variant="slide-right">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-3xl border border-gray-200 relative overflow-hidden">
                <div className="absolute top-0 right-0 p-4 opacity-10">
@@ -303,7 +303,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* CODE */}
-        <Section id="code" title="4. Implementation Details">
+        <Section id="code" title="4. Implementation Details" variant="blur">
           <div className="grid lg:grid-cols-2 gap-10">
              <div className="space-y-8">
                <div className="bg-slate-900 p-8 rounded-3xl text-indigo-300 font-mono text-sm leading-relaxed shadow-2xl">
@@ -334,7 +334,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* ALGORITHMS */}
-        <Section id="algorithms" title="5. Step-by-Step Logic">
+        <Section id="algorithms" title="5. Step-by-Step Logic" variant="flip">
           <div className="grid md:grid-cols-2 gap-10">
             <div className="bg-white p-8 rounded-3xl border border-gray-200">
               <h4 className="text-lg font-bold mb-6 flex items-center gap-2 text-blue-700">
@@ -376,7 +376,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* VISUALIZER */}
-        <Section id="visualizer" title="6. Interactive Visualization">
+        <Section id="visualizer" title="6. Interactive Visualization" variant="zoom-out">
           <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-7 bg-white p-10 rounded-3xl shadow-xl border border-slate-200 flex flex-col items-center">
               <QueueVisualizer queue={queue} />
@@ -465,7 +465,7 @@ const App: React.FC = () => {
         </Section>
 
         {/* APPLICATIONS */}
-        <Section id="applications" title="7. Applications">
+        <Section id="applications" title="7. Applications" variant="slide-up">
           <div className="grid md:grid-cols-2 gap-6">
             {APPLICATIONS.map((app, idx) => (
               <div key={idx} className="bg-white p-6 rounded-3xl border border-gray-200 flex gap-5 group hover:border-blue-300 transition-colors">
